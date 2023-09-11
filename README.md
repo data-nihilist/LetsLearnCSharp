@@ -77,3 +77,24 @@ Here's my typical set-up in _ easy steps (_ if we remove the initial config):
 </li>
 </ol>
 Tip: <project_name> should be representative of what you're accomplishing with this project. If it's a "firing range" type of deal, name your new project that!
+
+<h3>Now you should have a fully templated C# program - wahoo!</h3>
+
+<h4>You should get a pop-up from the .NET extension we installed asking if you'd like to configure a project suite: Accept this offering!</h4>
+
+<h2>Let's test this out:</h2>
+<ol>
+  <li>
+    In your integrated terminal, ensure you're in the root of your project folder: ~/root/<directory_name>/<project_name> $
+  </li>
+  <li>
+    Run the .NET build command: ~/root/<directory_name>/<project_name> $dotnet build
+  </li>
+      This pre-compiles any existing code and looks for errors.
+  <li>
+    Run the .NET run command: ~/root/<directory_name>/<project_name> $dotnet run
+  </li>
+      This will execute any code living in the Program.cs file that the ```dotnet new console -o``` command created for you
+</ol>
+
+<h3>At this point, "Hello World!" should be in your terminal output. You can safely delete everything in that file and start coding!</h3>
