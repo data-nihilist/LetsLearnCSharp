@@ -12,10 +12,9 @@ So, in order to make rad games (and become a better programmer as I do it), I sh
 This is step one of many on this journey :)
 
 Quick note: You don't NEED to learn C# to use Unity!
-But, if you want to become a better Unity developer, having a solid understanding of C# will be a huge bonus and will
-<h2>increase your market value and confidence with the software</h2>.
+But, if you want to become a better Unity developer, having a solid understanding of C# will be a huge bonus.
 
-<h1>How am I learning C#?</h1>
+<h2>How am I learning C#?</h2>
 Originally I was going to try and find a decent, well-reviewed textbook. That's how I learned JavaScript before beginning my apprenticeship at Launch Academy
 (see: <a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript by Marijn Haverbeke, bookmark it).</a>
 I'm a big fan of Marijn's work and how effective the process of: Read, Experiment, Proceed is for a learner of my style.
