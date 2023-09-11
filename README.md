@@ -1,36 +1,43 @@
 <div align="center">
 <h1>LetsLearnCSharp!</h1>
-
+<p>
 C# ("See-sharp") is a general-purpose, high-level programming language supporting multiple paradigms.
 C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
+</p>
 </div>
 
-
 <h2>Why am I learning C#?</h2>
+<p>
 To put it simply: I want to make video games. The Unity engine in part depends on C# (and C++, we'll tackle that later).
 So, in order to make rad games (and become a better programmer as I do it), I should learn C#.
-This is step one of many on this journey :)
-
+This is step one of many on this journey!
+</p>
+<h4>
 Quick note: You don't NEED to learn C# to use Unity!
 But, if you want to become a better Unity developer, having a solid understanding of C# will be a huge bonus.
+</h4>
 
 <h2>How am I learning C#?</h2>
+<p> 
 Originally I was going to try and find a decent, well-reviewed textbook. That's how I learned JavaScript before beginning my apprenticeship at Launch Academy
-(see: <a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript by Marijn Haverbeke, bookmark it).</a>
-I'm a big fan of Marijn's work and how effective the process of: Read, Experiment, Proceed is for a learner of my style.
-
+(see: <a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript by Marijn Haverbeke).</a>
+I'm a big fan of Marijn's work and how effective the process of: Read, Experiment, Proceed all within the space I'm learning from.
+</p>
+<p>
 Enter: <a href="https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/" target="_blank">freecodecamp.org's latest offering</a>
 
 This is what this repository will be hosting: My process through completeing the (New) Foundational C# with Microsoft certification.
 
-I wanted to ensure my progress was being stored somewhere other than my local machine. This 2017 macbook air can only get me so far beyond this point (Fall 2023).
-
+This begins using a virtual sandbox environment, but moves over to an IDE after the first chapter. I wanted to ensure my progress was being stored somewhere other than my local machine. This 2017 macbook air can only get me so far beyond this point (Fall 2023).
+</p>
+<h5>
 If you're new to C#, like I am, or are interested in discussing all things video games (and what makes them such impressive feats of engineering), message me on <a href="https://www.linkedin.com/in/matthew-mccredy/" target="_blank">Linkedin!</a>
+</h5>
 
 <h2>Environment Config</h2>
 Setting up your IDE for writing and executing C# programs is very easy to do.
 I'm writing and running all of this via VS Code (though you can also use Mono if that's more your jam).
-Here's my typical set-up in the following easy steps (_ if we remove the initial config):
+Here's my typical set-up in 10 easy steps (5 if we remove the initial config):
 
 <ol>
 <li>You need to be able to write C# on your machine:
@@ -97,4 +104,5 @@ Tip: `project_name` should be representative of what you're accomplishing with t
       This will execute any code living in the Program.cs file that the `dotnet new console -o` command created for you
 </ol>
 
-<h3>At this point, "Hello World!" should be in your terminal output. You can safely delete everything in that file and start coding!</h3>
+<h3>At this point, "Hello World!" should be in your terminal output.</h3>
+<h3>You can safely delete everything in that file and start coding!</h3>
