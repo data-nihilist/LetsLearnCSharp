@@ -1,0 +1,14 @@
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/bin/Debug/net7.0/whileDoWhile
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/bin/Debug/net7.0/whileDoWhile.deps.json
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/bin/Debug/net7.0/whileDoWhile.runtimeconfig.json
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/bin/Debug/net7.0/whileDoWhile.dll
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/bin/Debug/net7.0/whileDoWhile.pdb
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/whileDoWhile.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/whileDoWhile.AssemblyInfoInputs.cache
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/whileDoWhile.AssemblyInfo.cs
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/whileDoWhile.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/whileDoWhile.dll
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/refint/whileDoWhile.dll
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/whileDoWhile.pdb
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/whileDoWhile.genruntimeconfig.cache
+/Users/juice/Desktop/c#/booleanTimeWithC#/whileDoWhile/obj/Debug/net7.0/ref/whileDoWhile.dll

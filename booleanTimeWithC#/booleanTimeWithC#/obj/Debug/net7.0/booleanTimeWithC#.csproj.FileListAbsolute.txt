@@ -1,0 +1,14 @@
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/bin/Debug/net7.0/booleanTimeWithC#
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/bin/Debug/net7.0/booleanTimeWithC#.deps.json
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/bin/Debug/net7.0/booleanTimeWithC#.runtimeconfig.json
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/bin/Debug/net7.0/booleanTimeWithC#.dll
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/bin/Debug/net7.0/booleanTimeWithC#.pdb
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/booleanTimeWithC#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/booleanTimeWithC#.AssemblyInfoInputs.cache
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/booleanTimeWithC#.AssemblyInfo.cs
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/booleanTimeWithC#.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/booleanTimeWithC#.dll
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/refint/booleanTimeWithC#.dll
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/booleanTimeWithC#.pdb
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/booleanTimeWithC#.genruntimeconfig.cache
+/Users/juice/Desktop/c#/booleanTimeWithC#/booleanTimeWithC#/obj/Debug/net7.0/ref/booleanTimeWithC#.dll
