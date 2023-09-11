@@ -27,4 +27,53 @@ I wanted to ensure my progress was being stored somewhere other than my local ma
 
 If you're new to C#, like I am, or are interested in discussing all things video games (and what makes them such impressive feats of engineering), message me on <a href="https://www.linkedin.com/in/matthew-mccredy/" target="_blank">Linkedin!</a>
 
-Thanks for reading :)
+<h2>Environment Config</h2>
+Setting up your IDE for writing and executing C# programs is very easy to do.
+I'm writing and running all of this via VS Code (though you can also use Mono if that's more your jam).
+Here's my typical set-up in _ easy steps (_ if we remove the initial config):
+
+<ol>
+<li>You need to be able to write C# on your machine:
+<ul>
+  <li>Open VS Code</li>
+  <li>Navigate to the Extensions tab of your left</li>
+  <li>Search for: "C#"</li>
+  <li>Click "Install"</li>
+</ul>
+</li>
+<li>
+  You need a way to run C# on your machine: .NET ("Dot-Net") is the framework and runtime that C# programs are built with and run on.
+  <ul>
+    <li>In your VS Code</li>
+    <li>Navigate to the Extensions tab of your left</li>
+    <li>Search for: ".NET Runtime Install Tool"</li>
+    <li>CLick "Install"</li>
+  </ul>
+</li>
+<h4>Fun Fact: The "C# Dev Kit" you saw when searching for C# can also be installed for a 'one stop shop' sort of deal.</h4>
+<li>
+  Close VS Code (this is integral as the program needs to be rebooted after these plugins are installed).
+</li>
+<li>
+  Open your terminal and create a new directory to host your C# files: $mkdir <directory_name> (I named mine "c#," you can name yours whatever your heart desires.)
+</li>
+<li>
+  Navigate within this new directory from the command line: ~/<directory_name> $mkdir exampleFolder
+</li>
+<li>
+  Once you've created a directory to hold some C# program files, open your VS Code.
+</li>
+<li>
+  From VS Code, select File at the top of your desktop screen, then "Open"
+</li>
+<li>
+  Now, you should be in an empty VS Code session named <directory_name>.
+</li>
+<li>
+  Select Terminal at the top of your desktop screen, then "New Terminal"  This will open the VS Code integrated terminal.
+</li>
+<li>
+  Finally, from within this directory's root path of the integrated terminal: $dotnet new console -o ./<project_name> 
+</li>
+</ol>
+Tip: <project_name> should be representative of what you're accomplishing with this project. If it's a "firing range" type of deal, name your new project that!
