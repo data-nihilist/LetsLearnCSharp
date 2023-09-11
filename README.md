@@ -54,7 +54,7 @@ Here's my typical set-up in 10 easy steps (5 if we remove the initial config):
     <li>In your VS Code</li>
     <li>Navigate to the Extensions tab of your left</li>
     <li>Search for: ".NET Runtime Install Tool"</li>
-    <li>CLick "Install"</li>
+    <li>Click "Install"</li>
   </ul>
 </li>
 <h4>Fun Fact: The "C# Dev Kit" you saw when searching for C# can also be installed for a 'one stop shop' sort of deal.</h4>
