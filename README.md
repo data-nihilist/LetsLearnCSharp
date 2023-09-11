@@ -1,12 +1,12 @@
 <div align="center">
-# LetsLearnCSharp
+<h1>LetsLearnCSharp!</h1>
 
 C# ("See-sharp") is a general-purpose, high-level programming language supporting multiple paradigms.
-C# encompasses static typing,strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
+C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
 </div>
 
 
-<h1>Why am I learning C#?</h1>
+<h2>Why am I learning C#?</h2>
 To put it simply: I want to make video games. The Unity engine in part depends on C# (and C++, we'll tackle that later).
 So, in order to make rad games (and become a better programmer as I do it), I should learn C#.
 This is step one of many on this journey :)
