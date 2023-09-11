@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/bin/Debug/net7.0/chooseCorrectDataType
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/bin/Debug/net7.0/chooseCorrectDataType.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/bin/Debug/net7.0/chooseCorrectDataType.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/bin/Debug/net7.0/chooseCorrectDataType.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/bin/Debug/net7.0/chooseCorrectDataType.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/chooseCorrectDataType.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/chooseCorrectDataType.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/chooseCorrectDataType.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/chooseCorrectDataType.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/chooseCorrectDataType.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/refint/chooseCorrectDataType.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/chooseCorrectDataType.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/chooseCorrectDataType.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/chooseCorrectDataType/obj/Debug/net7.0/ref/chooseCorrectDataType.dll
