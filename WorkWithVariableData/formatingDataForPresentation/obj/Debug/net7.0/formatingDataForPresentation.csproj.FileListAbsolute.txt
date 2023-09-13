@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/bin/Debug/net7.0/formatingDataForPresentation
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/bin/Debug/net7.0/formatingDataForPresentation.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/bin/Debug/net7.0/formatingDataForPresentation.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/bin/Debug/net7.0/formatingDataForPresentation.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/bin/Debug/net7.0/formatingDataForPresentation.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/formatingDataForPresentation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/formatingDataForPresentation.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/formatingDataForPresentation.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/formatingDataForPresentation.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/formatingDataForPresentation.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/refint/formatingDataForPresentation.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/formatingDataForPresentation.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/formatingDataForPresentation.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/formatingDataForPresentation/obj/Debug/net7.0/ref/formatingDataForPresentation.dll
