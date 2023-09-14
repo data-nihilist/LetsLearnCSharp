@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/bin/Debug/net7.0/modifyingStrings
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/bin/Debug/net7.0/modifyingStrings.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/bin/Debug/net7.0/modifyingStrings.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/bin/Debug/net7.0/modifyingStrings.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/bin/Debug/net7.0/modifyingStrings.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/modifyingStrings.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/modifyingStrings.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/modifyingStrings.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/modifyingStrings.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/modifyingStrings.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/refint/modifyingStrings.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/modifyingStrings.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/modifyingStrings.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/modifyingStrings/obj/Debug/net7.0/ref/modifyingStrings.dll

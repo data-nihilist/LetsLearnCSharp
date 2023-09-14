@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/bin/Debug/net7.0/stringMethodsWithArrays
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/bin/Debug/net7.0/stringMethodsWithArrays.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/bin/Debug/net7.0/stringMethodsWithArrays.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/bin/Debug/net7.0/stringMethodsWithArrays.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/bin/Debug/net7.0/stringMethodsWithArrays.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/stringMethodsWithArrays.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/stringMethodsWithArrays.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/stringMethodsWithArrays.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/stringMethodsWithArrays.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/stringMethodsWithArrays.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/refint/stringMethodsWithArrays.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/stringMethodsWithArrays.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/stringMethodsWithArrays.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/stringMethodsWithArrays/obj/Debug/net7.0/ref/stringMethodsWithArrays.dll
