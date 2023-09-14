@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/bin/Debug/net7.0/creatingMethods
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/bin/Debug/net7.0/creatingMethods.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/bin/Debug/net7.0/creatingMethods.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/bin/Debug/net7.0/creatingMethods.dll
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/bin/Debug/net7.0/creatingMethods.pdb
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/creatingMethods.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/creatingMethods.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/creatingMethods.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/creatingMethods.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/creatingMethods.dll
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/refint/creatingMethods.dll
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/creatingMethods.pdb
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/creatingMethods.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/Methods/creatingMethods/obj/Debug/net7.0/ref/creatingMethods.dll
