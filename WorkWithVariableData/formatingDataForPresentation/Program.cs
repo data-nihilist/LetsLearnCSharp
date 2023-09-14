@@ -56,15 +56,16 @@ Console.WriteLine($"Price: {price:C} (Save {discount:C})");
 // This process is known as localization (or globalization).
 // Localization depends on many factors not discussed in this module, but simply:
 // The string formatting syntax may use a different format depending on the user's culture.
-
+Console.WriteLine("");
 //----------------------------------Formatting Numbers
 decimal measurement = 123456.78912m;
 Console.WriteLine($"Measurement: {measurement:N} units"); // By default, the N numeric format specifier displays only two digits after the decimal point
 Console.WriteLine($"Measurement: {measurement:N4} units"); // outputs: Measurement 123,456.7891 units
+Console.WriteLine("");
 //----------------------------------Formatting Percentages
 decimal tax = .36785m;
 Console.WriteLine($"Tax rate: {tax:P2}"); // outputs: Tax rate: 36.79 %
-
+Console.WriteLine("");
 //----------------------------------Combining Formatting Approaches
 decimal newPrice = 67.55m;
 decimal salePrice = 59.99m;
@@ -73,3 +74,73 @@ string yourDiscount = string.Format("You saved {0:C2} off the regular {1:C2} pri
 
 yourDiscount += $"\tA discount of {((newPrice - salePrice)/newPrice):P2}!"; // adding the percentage using string interpolation
 Console.WriteLine(yourDiscount); // outputs: You saved $7.56 off the regular $67.55 price
+Console.WriteLine("");
+//----------------------------------Exploring String Interpolation
+int invoiceNumber = 1201;
+decimal productShares = 25.4568m;
+decimal subtotal = 2750.00m;
+decimal taxPercentage = .15825m;
+decimal total = 3185.19m;
+
+Console.WriteLine($"\nInvoice Number: {invoiceNumber}");
+
+// Display the product shares with on thousandth of a share (0.001) precision
+Console.WriteLine($"\t\tShares: {productShares:N3} Product");
+// Display the subtotal that you charge the customer formatted as currency
+Console.WriteLine($"\t\tSub Total: {subtotal:C}");
+// Display the tax charged on the sale formatted as a percentage
+Console.WriteLine($"\t\t\tTax: {taxPercentage:P2}");
+// Finalize receipt with the total amount due formatted as currency
+Console.WriteLine($"\t\tTotal Billed: {total:C}");
+Console.WriteLine("");
+//-----------------------------------------Padding: Adding whitespace before or after strings
+string input = "Pad this";
+Console.WriteLine(input.PadLeft(12));
+Console.WriteLine(input.PadRight(12));
+// An overloaded method is another version of the method with different or extra arguments that modify the functionality of the method slightly
+Console.WriteLine(input.PadLeft(12, '-')); // be keen that we need to use single quotations for this method
+Console.WriteLine(input.PadRight(12, '-'));
+Console.WriteLine("");
+string paymentId = "769C";
+var formattedLine = paymentId.PadRight(6);
+Console.WriteLine(formattedLine);
+string payeeName = "Mr. Stephen Ortega";
+formattedLine += payeeName.PadRight(24);
+Console.WriteLine(formattedLine);
+string paymentAmount = "$5,000.00";
+formattedLine += paymentAmount.PadLeft(10);
+Console.WriteLine(formattedLine);
+Console.WriteLine("");
+Console.WriteLine("1234567890123456789012345678901234567890");
+Console.WriteLine(formattedLine);
+Console.WriteLine("");
+//----------------------------------Exercise: Format A Letter
+string customerName = "Ms. Barros";
+string currentProduct = "Magic Yield";
+int currentShares = 2975000;
+decimal currentReturn = 0.1275m;
+decimal currentProfit = 55000000.0m;
+string newProduct = "Glorious Future";
+decimal newReturn = 0.13125m;
+decimal newProfit = 63000000.0m;
+//-------------------------------------------------My logic here
+string dearCustomer = $"Dear, {customerName}";
+string intro = $"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n";
+string current = $"Currently, you own {currentShares:N2} at a return of {currentReturn:P2}\n";
+string pitch = $"Our new product, {newProduct} offers a return of {newReturn:P2}. Given your current volume, your potential profit would be {newProfit:C}\n";
+Console.WriteLine(dearCustomer);
+Console.WriteLine(intro);
+Console.WriteLine(current);
+Console.WriteLine(pitch);
+Console.WriteLine("Here's a quick comparison:\n");
+string comparisonMessage = "";
+comparisonMessage = currentProduct.PadRight(20);
+comparisonMessage += string.Format("{0:P}", currentReturn).PadRight(10);
+comparisonMessage += string.Format("{0:C}", currentProfit).PadRight(20);
+comparisonMessage += "\n";
+comparisonMessage += newProduct.PadRight(20);
+comparisonMessage += string.Format("{0:P}", newReturn).PadRight(10);
+comparisonMessage += string.Format("{0:C}", newProfit).PadRight(20);
+//-------------------------------------------------
+
+Console.WriteLine(comparisonMessage);
