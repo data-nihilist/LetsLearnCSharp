@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/bin/Debug/net7.0/arraysUsingHelperMethods
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/bin/Debug/net7.0/arraysUsingHelperMethods.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/bin/Debug/net7.0/arraysUsingHelperMethods.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/bin/Debug/net7.0/arraysUsingHelperMethods.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/bin/Debug/net7.0/arraysUsingHelperMethods.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/arraysUsingHelperMethods.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/arraysUsingHelperMethods.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/arraysUsingHelperMethods.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/arraysUsingHelperMethods.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/arraysUsingHelperMethods.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/refint/arraysUsingHelperMethods.dll
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/arraysUsingHelperMethods.pdb
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/arraysUsingHelperMethods.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/WorkWithVariableData/arraysUsingHelperMethods/obj/Debug/net7.0/ref/arraysUsingHelperMethods.dll

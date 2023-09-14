@@ -203,7 +203,7 @@ foreach (var value in values)
         alphabeticalElements += value;
     }
 }
-Console.WriteLine("\n\n\t\t\t\tMicrosoft Challeges Output: (reference code past line 177)");
+Console.WriteLine("\n\n\t\t\t\tMicrosoft Challenges Output: (reference code past line 177)");
 Console.WriteLine($"Message: {alphabeticalElements}");
 Console.WriteLine($"Total: {total}\n");
 //-------------------------------------------------------------
