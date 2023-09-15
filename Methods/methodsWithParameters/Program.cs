@@ -256,9 +256,7 @@ void Emails(string[,] array, string domain)
         string choppedFirstName = processedFirstName.Substring(0, 2);
         string lastName = array[i, 1];
         string processedLastName = lastName.ToLower();
-        string corporateEmail = $"{choppedFirstName}{processedLastName}@{domain}";
-        Console.WriteLine(corporateEmail);
+        string email = $"{choppedFirstName}{processedLastName}@{domain}";
+        Console.WriteLine(email);
     }
-
-
 }
