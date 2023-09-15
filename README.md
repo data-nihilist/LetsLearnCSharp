@@ -8,13 +8,13 @@ C# encompasses static typing, strong typing, lexically scoped, imperative, decla
 
 <h2>Why am I learning C#?</h2>
 <p>
-To put it simply: I want to make video games. The Unity engine in part depends on C# (and C++, we'll tackle that later).
+To put it simply: I want to make video games. The many game engines in part depend on C# (and C++, we'll tackle that later).
 So, in order to make rad games (and become a better programmer as I do it), I should learn C#.
 This is step one of many on this journey!
 </p>
 <h4>
-Quick note: You don't NEED to learn C# to use Unity!
-But, if you want to become a better Unity developer, having a solid understanding of C# will be a huge bonus.
+Quick note: You don't NEED to learn C# to use certain game engines such as Unity!
+But, if you want to become a better developer, having a solid understanding of C# will be a huge bonus.
 </h4>
 
 <h2>How am I learning C#?</h2>
@@ -28,7 +28,7 @@ Enter: <a href="https://www.freecodecamp.org/learn/foundational-c-sharp-with-mic
 
 This is what this repository will be hosting: My process through completeing the (New) Foundational C# with Microsoft certification.
 
-This begins using a virtual sandbox environment, but moves over to an IDE after the first chapter. I wanted to ensure my progress was being stored somewhere other than my local machine. This 2017 macbook air can only get me so far beyond this point (Fall 2023).
+This begins using a virtual sandbox environment, but moves over to an IDE after the first chapter. I wanted to ensure my progress was being stored somewhere other than my local machine. This 2019 macbook air can only get me so far beyond this point (Fall 2023).
 </p>
 <h5>
 If you're new to C#, like I am, or are interested in discussing all things video games (and what makes them such impressive feats of engineering), message me on <a href="https://www.linkedin.com/in/matthew-mccredy/" target="_blank">Linkedin!</a>
