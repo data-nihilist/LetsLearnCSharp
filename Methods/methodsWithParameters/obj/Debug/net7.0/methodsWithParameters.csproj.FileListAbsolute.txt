@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/bin/Debug/net7.0/methodsWithParameters
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/bin/Debug/net7.0/methodsWithParameters.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/bin/Debug/net7.0/methodsWithParameters.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/bin/Debug/net7.0/methodsWithParameters.dll
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/bin/Debug/net7.0/methodsWithParameters.pdb
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/methodsWithParameters.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/methodsWithParameters.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/methodsWithParameters.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/methodsWithParameters.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/methodsWithParameters.dll
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/refint/methodsWithParameters.dll
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/methodsWithParameters.pdb
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/methodsWithParameters.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/Methods/methodsWithParameters/obj/Debug/net7.0/ref/methodsWithParameters.dll
