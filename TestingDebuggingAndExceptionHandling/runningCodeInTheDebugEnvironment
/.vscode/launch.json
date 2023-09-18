@@ -1,0 +1,135 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr", // The type of debugger used for the launch configuration
+            "request": "launch", // The request type of launch configuration
+            "preLaunchTask": "build", // Specifies a task to run before running our debugging program
+            "program": "${workspaceFolder}/bin/Debug/net7.0/runningCodeInTheDebugEnvironment.dll",
+            "args": [], // specifies the arguments passed to the program at launch (currently none entered)
+            "cwd": "${workspaceFolder}", // specifies the working directory of the target process
+            "stopAtEntry": false,
+            "console": "internalConsole" // specifies the type of console that's used when the application is launched.
+            // The options are 'internalConsole', 'integratedTerminal', and 'externalTerminal'
+            // 'internalConsole' is the default.
+
+        }   // internalConsole: corresponds to the DEBUG CONSOLE panel in the Panels area below the VSC Editor.
+            // integratedTerminal: corresponds to the OUTPUT panel in the Panels area below the VSC Editor.
+            // externalTerminal: corresponds to an external terminal window. The Command Prompt application that
+            //comes with Windows is an example of a terminal window.
+
+            // ** The DEBUG CONSOLE cannot support console input. If an application reads user input via a
+            //command such as Console.Read(), then the 'console:' setting must be set to either
+            //integratedTerminal or externalTerminal.
+
+            // ** Console applications that write to the console, but don't read input from the console, can use
+            //any of the three 'console:' settings listed above.
+
+            // ** If you need to stop at the entry point of the target, you can optionally set
+            //'stopAtEntry' to be true (line 15)
+    ]
+}
+
+//                  Configuring a launch.json file for multiple projects
+
+        // Say we're working on a coding project that includes several console applications. The root
+        //project folder, SpecialProjects, is the workspace folder that we open in VSCode when we work on our code.
+        
+        // We have two applications that we're developing: Project123 && Project456
+
+        // We use the RUN AND DEBUG view to debug the applications: we want to select the application that we're
+        //debugging from the user interface. We also want any saved code updates to be compiled prior to attaching
+        //the debugger to our applications.
+
+        // Our '.vscode' folder that's generated along with our launch.json && tasks.json files should be
+        //associated with our SpecialProjects folder - not the individual project folders.
+
+//          Like so:
+        //[SpecialProjects]
+        //  |-[.vscode]
+        //  |   |-launch.json
+        //  |   |-tasks.json
+        //  |-[Project123]
+        //  |   |-bin
+        //  |   |-obj
+        //  |   |-Program.cs
+        //  |   |-Project123.csproj
+        //  |-[Project456]
+        //  |   |-bin
+        //  |   |-obj
+        //  |   |-Program.cs
+        //  |   |-Project456.csproj
+        //
+        //          Here's how that launch.json file looks like for this example
+
+        //     "version": "0.2.0",
+        //     "configurations": [
+        //         {
+        //             "name": "Launch Project123",
+        //             "type": "coreclr",
+        //             "request": "launch",
+        //             "preLaunchTask": "buildProject123",
+        //             "program": "${workspaceFolder}/Project123/bin/Debug/net7.0/Project123.dll",
+        //             "args": [],
+        //             "cwd": "${workspaceFolder}/Project123",
+        //             "console": "internalConsole",
+        //             "stopAtEntry": false
+        //         },
+        //         {
+        //             "name": "Launch Project456",
+        //             "type": "coreclr",
+        //             "request": "launch",
+        //             "preLaunchTask": "buildProject456",
+        //             "program": "${workspaceFolder}/Project456/bin/Debug/net7.0/Project456.dll",
+        //             "args": [],
+        //             "cwd": "${workspaceFolder}/Project456",
+        //             "console": "internalConsole",
+        //             "stopAtEntry": false
+        //         }
+        //     ]
+
+    // Notice the name, preLaunch, and program fields are all configured fora specific application
+    // 'name' specifies the selectable launch option that's displayed in the RUN AND DEBUG view UI
+    // 'preLaunch' specifies the name of the task that's performed prior to launching the debugger
+    // 'program' specifies the path to our application
+
+    //**The tasks.json file contains the named tasks and the info required to complete the task
+
+
+
+        //          And here's how that tasks.json file looks like for this example
+
+        //      "version": "2.0.0",
+        //      "tasks": [
+        //          {
+        //              "label": "buildProject123",
+        //              "command": "dotnet",
+        //              "type": "process",
+        //              "args": [
+        //                  "build",
+        //                  "${workspaceFolder}/Project123/Project123.csproj",
+        //                  "/property:GenerateFullPaths=true",
+        //                  "/consoleloggerparameters:NoSummary"
+        //              ],
+        //              "problemMatcher": "$msCompile"
+        //          },
+        //          {
+        //              "label": "buildProject456",
+        //              "command": "dotnet",
+        //              "type": "process",
+        //              "args": [
+        //                  "build",
+        //                  "${workspaceFolder}/Project456/Project456.csproj",
+        //                  "/property:GenerateFullPaths=true",
+        //                  "/consoleloggerparameters:NoSummary"
+        //              ],
+        //              "problemMatcher": "$msCompile"
+        //          }
+        //      ]
+
+        // With these updates in place, the RUN AND DEBUG view displays launch options for debugging either
+        //the project123 or project456 application!

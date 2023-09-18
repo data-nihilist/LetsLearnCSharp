@@ -240,11 +240,11 @@ void Move(int speed = 1, bool otherKeysExit = false)
             break;
         
         case ConsoleKey.LeftArrow:
-            playerX--;
+            playerX -= speed;
             break;
 
         case ConsoleKey.RightArrow:
-            playerX++;
+            playerX += speed;
             break;
         
         case ConsoleKey.Escape:
