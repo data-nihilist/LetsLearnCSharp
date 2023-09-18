@@ -19,7 +19,7 @@
 
         }   // internalConsole: corresponds to the DEBUG CONSOLE panel in the Panels area below the VSC Editor.
             // integratedTerminal: corresponds to the OUTPUT panel in the Panels area below the VSC Editor.
-            // externamTerminal: correstops to an external terminal window. The Command Prompt application that
+            // externalTerminal: corresponds to an external terminal window. The Command Prompt application that
             //comes with Windows is an example of a terminal window.
 
             // ** The DEBUG CONSOLE cannot support console input. If an application reads user input via a
@@ -41,8 +41,8 @@
         
         // We have two applications that we're developing: Project123 && Project456
 
-        // We use the RUN AND DEBUG view to debug the applications: we want to sleect the application that we're
-        //debugging from the user interface. We also want any savedcode updates to be compiled prior to attaching
+        // We use the RUN AND DEBUG view to debug the applications: we want to select the application that we're
+        //debugging from the user interface. We also want any saved code updates to be compiled prior to attaching
         //the debugger to our applications.
 
         // Our '.vscode' folder that's generated along with our launch.json && tasks.json files should be
@@ -94,7 +94,7 @@
 
     // Notice the name, preLaunch, and program fields are all configured fora specific application
     // 'name' specifies the selectable launch option that's displayed in the RUN AND DEBUG view UI
-    // 'preLaunch' specifies the name of the task that's peformed prior to launching the debugger
+    // 'preLaunch' specifies the name of the task that's performed prior to launching the debugger
     // 'program' specifies the path to our application
 
     //**The tasks.json file contains the named tasks and the info required to complete the task

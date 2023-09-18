@@ -82,7 +82,7 @@ for (int i = 0; i <= n; i++)
         //before it will 'break' execution.
 
 //              Logpoints
-        // A 'Logpoint' is a varient ofa breakpoint that does not "break" into the debugger but instead
+        // A 'Logpoint' is a variant of a breakpoint that does not "break" into the debugger but instead
         //logs a message to the debug console.
         // Logpoints can include a conditional 'expression' and/or 'hit count' to further control when logging
         //messages are generated.
