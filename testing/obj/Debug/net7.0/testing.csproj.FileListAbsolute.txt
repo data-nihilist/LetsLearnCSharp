@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/testing/bin/Debug/net7.0/testing
+/Users/juice/Desktop/LetsLearnCSharp/testing/bin/Debug/net7.0/testing.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/testing/bin/Debug/net7.0/testing.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/testing/bin/Debug/net7.0/testing.dll
+/Users/juice/Desktop/LetsLearnCSharp/testing/bin/Debug/net7.0/testing.pdb
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/testing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/testing.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/testing.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/testing.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/testing.dll
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/refint/testing.dll
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/testing.pdb
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/testing.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/testing/obj/Debug/net7.0/ref/testing.dll

@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/bin/Debug/net7.0/exceptionHandling
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/bin/Debug/net7.0/exceptionHandling.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/bin/Debug/net7.0/exceptionHandling.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/bin/Debug/net7.0/exceptionHandling.dll
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/bin/Debug/net7.0/exceptionHandling.pdb
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/exceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/exceptionHandling.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/exceptionHandling.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/exceptionHandling.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/exceptionHandling.dll
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/refint/exceptionHandling.dll
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/exceptionHandling.pdb
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/exceptionHandling.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/TestingDebuggingAndExceptionHandling/exceptionHandling/obj/Debug/net7.0/ref/exceptionHandling.dll
