@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/bin/Debug/net7.0/introduction
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/bin/Debug/net7.0/introduction.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/bin/Debug/net7.0/introduction.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/bin/Debug/net7.0/introduction.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/bin/Debug/net7.0/introduction.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/introduction.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/introduction.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/introduction.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/introduction.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/introduction.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/refint/introduction.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/introduction.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/introduction.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/introduction/obj/Debug/net7.0/ref/introduction.dll
