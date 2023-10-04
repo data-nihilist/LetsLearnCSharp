@@ -107,7 +107,7 @@ void BuyingInventory()
     Console.WriteLine("Enter the number corresponding to the item you'd like to get the price of.");
     int choice = Convert.ToInt32(Console.ReadLine());
 
-    int price = int.Parse(itemsForSale[(choice - 1), 1]);
+    int price = int.Parse(itemsForSale[choice - 1, 1]);
 
     Console.WriteLine("Say, remind me yer name, friend.");
     string? playerName = Console.ReadLine();

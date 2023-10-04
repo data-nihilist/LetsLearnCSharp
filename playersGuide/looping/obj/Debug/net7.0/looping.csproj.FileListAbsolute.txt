@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/bin/Debug/net7.0/looping
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/bin/Debug/net7.0/looping.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/bin/Debug/net7.0/looping.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/bin/Debug/net7.0/looping.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/bin/Debug/net7.0/looping.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/looping.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/looping.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/looping.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/looping.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/looping.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/refint/looping.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/looping.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/looping.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/looping/obj/Debug/net7.0/ref/looping.dll

@@ -1,5 +1,4 @@
 ﻿//                  Things I wasn't Exactly Aware Of Before This Introduction
-using System.Collections;
 
 Console.WriteLine("Below is a numbered list of my favorite insights that RB's introduction for The C# Player's Guide 5th edition\n\n");
 Console.WriteLine("1. The way RB breaks down the C#/.NET BCL-namespace-class-method system is very well put:\n");
