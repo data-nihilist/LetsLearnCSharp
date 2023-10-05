@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/bin/Debug/net7.0/enumerations
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/bin/Debug/net7.0/enumerations.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/bin/Debug/net7.0/enumerations.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/bin/Debug/net7.0/enumerations.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/bin/Debug/net7.0/enumerations.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/enumerations.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/enumerations.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/enumerations.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/enumerations.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/enumerations.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/refint/enumerations.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/enumerations.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/enumerations.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/enumerations/obj/Debug/net7.0/ref/enumerations.dll
