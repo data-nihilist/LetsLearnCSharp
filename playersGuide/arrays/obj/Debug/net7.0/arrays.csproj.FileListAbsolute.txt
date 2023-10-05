@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/bin/Debug/net7.0/arrays
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/bin/Debug/net7.0/arrays.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/bin/Debug/net7.0/arrays.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/bin/Debug/net7.0/arrays.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/bin/Debug/net7.0/arrays.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/arrays.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/arrays.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/arrays.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/arrays.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/arrays.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/refint/arrays.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/arrays.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/arrays.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/arrays/obj/Debug/net7.0/ref/arrays.dll
