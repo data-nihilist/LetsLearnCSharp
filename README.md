@@ -30,6 +30,11 @@ This is what this repository will be hosting: My process through completeing the
 
 This begins using a virtual sandbox environment, but moves over to an IDE after the first chapter. I wanted to ensure my progress was being stored somewhere other than my local machine. This 2019 macbook air can only get me so far beyond this point (Fall 2023).
 </p>
+
+<h2>**EDIT I've since completed my C# Microsoft Certification! Wahoo. Onto the next goal. You'll notice this repository has shifted gears from introductory materials (though those things are still reviewed and covered here) towards higher order, more advanced OOP with C#.
+</h2>
+<p>I'm now back to my favorite method of teaching myself programming - textbooks B) The one I've overhauled this repo for is named "The Player's Guide To C#" by RB Whitaker.
+Whitaker takes an otherwise dull topic (learning a programming language) and livens the lessons by utilizing themes from many classic games. No, it isn't a textbook for learning how to build videogames - and that's okay - because as a developer, C# and C++ will get you far. Enjoying the lessons along the way is just an added bonus.</p>
 <h5>
 If you're new to C#, like I am, or are interested in discussing all things video games (and what makes them such impressive feats of engineering), message me on <a href="https://www.linkedin.com/in/matthew-mccredy/" target="_blank">Linkedin!</a>
 </h5>
@@ -106,3 +111,5 @@ Tip: `project_name` should be representative of what you're accomplishing with t
 
 <h3>At this point, "Hello World!" should be in your terminal output.</h3>
 <h3>You can safely delete everything in that file and start coding!</h3>
+<h2>DON'T FORGET to add a .gitignore to your directory, and list the 'obj' and 'bin' folders (as well as any other environmental folders that you don't want to clutter your repos, should you wish to create a repository of your own).</h2>
+<h3>You'll know what I'm talking about here when you first run "dotnet build" in a new project file.</h3>
