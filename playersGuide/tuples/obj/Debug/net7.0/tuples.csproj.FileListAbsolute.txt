@@ -1,0 +1,14 @@
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/bin/Debug/net7.0/tuples
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/bin/Debug/net7.0/tuples.deps.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/bin/Debug/net7.0/tuples.runtimeconfig.json
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/bin/Debug/net7.0/tuples.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/bin/Debug/net7.0/tuples.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/tuples.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/tuples.AssemblyInfoInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/tuples.AssemblyInfo.cs
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/tuples.csproj.CoreCompileInputs.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/tuples.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/refint/tuples.dll
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/tuples.pdb
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/tuples.genruntimeconfig.cache
+/Users/juice/Desktop/LetsLearnCSharp/playersGuide/tuples/obj/Debug/net7.0/ref/tuples.dll
