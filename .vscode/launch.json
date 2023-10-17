@@ -2,17 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/TestingDebuggingAndExceptionHandling/exceptionHandling/bin/Debug/net7.0/exceptionHandling.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/TestingDebuggingAndExceptionHandling/exceptionHandling",
-            "stopAtEntry": false,
-            "console": "internalConsole"
-        },
-        {
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes
             // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
@@ -21,11 +10,11 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/TestingDebuggingAndExceptionHandling/configuringConditionalBreakpoints/bin/Debug/net7.0/configuringConditionalBreakpoints.dll",
+            "program": "${workspaceFolder}/playersGuide/introduction/bin/Debug/net7.0/introduction.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/TestingDebuggingAndExceptionHandling/configuringConditionalBreakpoints",
+            "cwd": "${workspaceFolder}/playersGuide/introduction",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
-            "console": "integratedTerminal",
+            "console": "internalConsole",
             "stopAtEntry": false
         },
         {
