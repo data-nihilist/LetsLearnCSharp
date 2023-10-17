@@ -166,7 +166,9 @@ do
     if (choiceSeasoning == "spicy")
         seasoning = Seasoning.Spicy;
 
-Console.WriteLine($"{seasoning} {mainIngredient} {recipe}");
+(Seasoning, MainIngredient, Recipe) finalRecipe = (seasoning, mainIngredient, recipe);
+
+Console.WriteLine(finalRecipe);
 simula = false;
 
 }while(simula);
