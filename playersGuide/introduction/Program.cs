@@ -34,7 +34,7 @@ string[] mathMethods =
     "Max()",
 };
 
-namespacingSummary();
+NamespacingSummary();
 
 Console.WriteLine();
 
@@ -92,7 +92,7 @@ ushort[] unsignedShortInformation = { 2, minUnsignedShort, maxUnsignedShort };
 uint[] unsignedIntInformation = { 4, minUnsignedInt, maxUnsignedInt };
 ulong[] unsignedLongInformation = { 8, minUnsignedLong, maxUnsignedLong };
 
-integerTypesSummary();
+IntegerTypesSummary();
 
 Console.WriteLine("\n\t\t\tBinary & Hexadecimal Literals\n");
 Console.WriteLine($"Binary Literal:\t\t\tint thirteen = 0b00001101\t--> {0b00001101}");
@@ -127,7 +127,7 @@ string[] floatInformation = { floatRange, " ", floatPrecision, "\t", floatsAreHa
 string[] doubleInformation = { doubleRange, " ", doublePrecision, "\t", doublesAreHardwareSupported };
 string[] decimalInformation = { decimalRange, " ", decimalPrecision, "\t", decimalsAreHardwareSupported };
 
-floatingPointTypesSummary();
+FloatingPointTypesSummary();
 
 Console.WriteLine("\n\t\t\tBoolean Types\n");
 
@@ -140,7 +140,7 @@ Console.WriteLine($"The BLT is not a sandwich: {theBltIsNotASandwich}");
 Console.WriteLine();
 
 //-------------------------------------------------------functions for console output are fun
-void floatingPointTypesSummary()
+void FloatingPointTypesSummary()
 {
     byte memory;
     string[] typeNames = { "float", "double", "decimal" };
@@ -184,7 +184,7 @@ void floatingPointTypesSummary()
     }
 }
 
-void integerTypesSummary()
+void IntegerTypesSummary()
 {
     string yes = "Yes";
     string no = "No";
@@ -247,7 +247,7 @@ void integerTypesSummary()
 
 }
 
-void namespacingSummary()
+void NamespacingSummary()
 {
     for (int i = 0; i < introInsights.Length; i++)
     {

@@ -1,6 +1,9 @@
 ﻿// Classes are objectively the most powerful way to define new types.
+/*
+    Object-Oriented Principle # 1: Encapsulation
+        -Combining data  (fields) and the operations on that data (methods) into a well-defined unit (like a class).
+*/
 
-using Microsoft.VisualBasic;
 
 Score best = new Score();   // At this point of creating our Score class, we haven't created a constructor for our Score class. The compiler is nice enough to generate a default one for us until we do.
 
