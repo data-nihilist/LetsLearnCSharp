@@ -1,4 +1,5 @@
-﻿using static System.Convert;
+﻿using System.Security.Cryptography.X509Certificates;
+using static System.Convert;
 
 Console.WriteLine("\t\t\t\tBoss Battle: The Point\n\nThe first pedestal asks you to create a Point class to store a point in two dimensions. Each point is\nrepresented by an x-coordinate (x), a side-to-side distance from a special central point called the origin,\nand a y-coordinate (y), an up-and-down distance away from the origin.\n\nObjectives:\n-\tDefine a new Point class with properties for X and Y.\n-\tAdd a constructor to create a point from a specific x- and y-coordinate.\n-\tAdd a parameterless constructor to create a point at the origin (0, 0).\n-\tIn your main method, create a point at (2, 3) and another at (-4, 0). Display these points on the\n\tconsole window in the format (x, y) to illustrate that the class works.\n-\tAnswer these questions: Are your X and Y properties immutable? Why did you choose what you did?\n\n");
 
@@ -95,8 +96,76 @@ Console.WriteLine("\n\t\t\t\tBoss Battle: The Locked Door\n\nThe fourth pedestal
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 Console.WriteLine("\n\t\t\t\tBoss Battle: The Password Validator\n\nThe fifth and final pedestal describes a class that represents a concept more abstract than the first four:\na password validator. You must create a class that can determine if a password is valid (meets the rules\ndefined for a legitimate password). The pedestal initially doesn't describe any rules, but as you brush the\ndust off the pedestal, it vibrates for a moment, and the following rules appear:\n\n\t\tPasswords must be at least 6 letters long and no more than 13 letters long.\n\t\tPasswords must contain at least one uppercase letter, one lowercase letter, and one number.\n\t\tPasswords cannot contain a capital T or an ampersand(&) because Ingelmar in IT has decreed it.\n\nThe last rule seems random, and you wonder if the pedestal is just tormenting you with obscure rules.\n\nYou ponder for a moment about how to decide if a character is uppercase, lowercase, or a number, but\nwhile scratching your head, you notice a piece of folded parchment on the ground near your feet. You\npick it up, unfold it, and read it:\n\"foreach with a string lets you get its characters!\n> foreach (char letter in word) { ... }\n\nchar has static methods to categorize letters!\n> char.IsUpper('A'), char.IsLower('a'), char.IsDigit('0')\n\nThat might be useful information! You are grateful to whoever left it behind. It is signed simply \"A.\"\n\nObjectives:\n\n-\tDefine a new PasswordValidator class that can be given a password and determine if the\npassword follows the rules above.\n-\tMake your main method loop forever, asking for a password and reporting whether the password is allowed using an instance of the PasswordValidator class.\n\n");
 
-string? passwordTest = Console.ReadLine();
-PasswordValidator.CheckPassword(passwordTest);
+// string? passwordTest = Console.ReadLine();
+// PasswordValidator.CheckPassword(passwordTest);
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Console.WriteLine("\n\t\t\t\tBoss Battle: Tic-Tac-Toe\n\nCompleting designs  for the three games in the Chamber of Design causes the pedestals to light up red\nagain, and another door opens, letting you into the final chamber. This chamber has only a single large,\nbroad pedestal. Inscribed on the stone floor in a circle around the pedestal are the engraved words, \"Only\na True Programmer can build object-oriented programs.\"\n\nMore text engraved on the pedestal describes what you recognize as the game of Tic-Tac-Toe, stating\nthat in ancient times, inhabitants of the land would use this as a Battle of Wits to determine the outcome\nof political strife. Instead of fighting wars, they would battle it out n a game of Tic-Tac-Toe.\n\nYour job is to recreate the game of Tic-Tac-Toe, allowing two players to compete against each other. The\nfollowing features are required:\n\n\t\tTwo human players take turns entering their choice using the same keyboard.\n\t\tThe players designate which square they want to play in. HINT: You might consider using the number\n\t\tpad as a guide. For example, if they enter 7, they have chosen the top left corner of the board.\n\t\tThe game should prevent players from choosing squares that are already occupied. If such a move\n\t\tis attempted, the player should be told of the problem and given another chance.\n\t\tThe game must detect when a player wins or when the board is full with no winner (draw/\"cat\").\n\t\tWhen the game is over, the outcome is displayed to the players.\n\t\tThe state of the board must be displayed to the player after each play.\n\nObjectives:\n\n-\tBuild the game of Tic-Tac-Toe as described in the requirements above. Starting the CRC cards is\n\trecommended, but the goal is to make working software, not CRC cards.\n-\tAnswer this question: How might you modify your completed program if running multiple rounds\n\twas a requirement (for example, a best-out-of-five series)?\n\n");
+
+Board board = new();
+Console.WriteLine(board._playingField);
+Console.WriteLine(board.SetBoard());
+Console.WriteLine(board._playingField);
+
+Player playerOne = new('&');
+Player playerTwo = new('$');
+Console.WriteLine(playerOne._playerSymbol);
+Console.WriteLine(playerTwo._playerSymbol);
+
+Console.WriteLine(playerOne.MoveSelect(board));
+
+
+
+//-----------------------------------------------------Tic-Tac-Toe (start)
+public class Board
+{
+    public string _playingField = $" 1 | 2 | 3 \n---+---+---\n 4 | 5 | 6 \n---+---+---\n 7 | 8 | 9 \n";
+    public Board()
+    {
+    }
+
+    public string SetBoard()
+    {
+        string newBoard = "";
+
+        foreach(char unit in _playingField)
+        {
+            if (char.IsDigit(unit))
+                newBoard += " ";
+            if (!char.IsDigit(unit))
+                newBoard += unit;
+        }
+        return newBoard;
+    }
+}
+public class Player
+{
+    public char _playerSymbol;
+
+    public Player(char symbol)
+    {
+        _playerSymbol = symbol;
+    }
+
+    public string MoveSelect(Board board)
+    {
+        Console.WriteLine("Top row is:\t1, 2, 3\nCenter row is:\t4, 5, 6\nBottom row is:\t7, 8, 9\n\nWhich position would you like to choose?");
+        string? playerChoice = Console.ReadLine();
+
+        string boardAfterPlay = "";
+
+        foreach(char field in board._playingField)
+        {
+            if(!char.Equals(playerChoice, field))
+            boardAfterPlay += field;
+            if(char.Equals(playerChoice, field))
+            boardAfterPlay += $"{playerChoice}";
+        }
+
+        return boardAfterPlay;
+    }
+}
+
+//-----------------------------------------------------Tic-Tac-Toe (end)
 //-----------------------------------------------------The Password Validator (start)
 public class PasswordValidator
 {
