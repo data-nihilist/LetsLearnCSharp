@@ -99,72 +99,112 @@ Console.WriteLine("\n\t\t\t\tBoss Battle: The Password Validator\n\nThe fifth an
 // string? passwordTest = Console.ReadLine();
 // PasswordValidator.CheckPassword(passwordTest);
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
-Console.WriteLine("\n\t\t\t\tBoss Battle: Tic-Tac-Toe\n\nCompleting designs  for the three games in the Chamber of Design causes the pedestals to light up red\nagain, and another door opens, letting you into the final chamber. This chamber has only a single large,\nbroad pedestal. Inscribed on the stone floor in a circle around the pedestal are the engraved words, \"Only\na True Programmer can build object-oriented programs.\"\n\nMore text engraved on the pedestal describes what you recognize as the game of Tic-Tac-Toe, stating\nthat in ancient times, inhabitants of the land would use this as a Battle of Wits to determine the outcome\nof political strife. Instead of fighting wars, they would battle it out n a game of Tic-Tac-Toe.\n\nYour job is to recreate the game of Tic-Tac-Toe, allowing two players to compete against each other. The\nfollowing features are required:\n\n\t\tTwo human players take turns entering their choice using the same keyboard.\n\t\tThe players designate which square they want to play in. HINT: You might consider using the number\n\t\tpad as a guide. For example, if they enter 7, they have chosen the top left corner of the board.\n\t\tThe game should prevent players from choosing squares that are already occupied. If such a move\n\t\tis attempted, the player should be told of the problem and given another chance.\n\t\tThe game must detect when a player wins or when the board is full with no winner (draw/\"cat\").\n\t\tWhen the game is over, the outcome is displayed to the players.\n\t\tThe state of the board must be displayed to the player after each play.\n\nObjectives:\n\n-\tBuild the game of Tic-Tac-Toe as described in the requirements above. Starting the CRC cards is\n\trecommended, but the goal is to make working software, not CRC cards.\n-\tAnswer this question: How might you modify your completed program if running multiple rounds\n\twas a requirement (for example, a best-out-of-five series)?\n\n");
+Console.WriteLine("\n\t\t\t\tBoss Battle: Tic-Tac-Toe\n\nCompleting designs for the three games in the Chamber of Design causes the pedestals to light up red\nagain, and another door opens, letting you into the final chamber. This chamber has only a single large,\nbroad pedestal. Inscribed on the stone floor in a circle around the pedestal are the engraved words, \"Only\na True Programmer can build object-oriented programs.\"\n\nMore text engraved on the pedestal describes what you recognize as the game of Tic-Tac-Toe, stating\nthat in ancient times, inhabitants of the land would use this as a Battle of Wits to determine the outcome\nof political strife. Instead of fighting wars, they would battle it out n a game of Tic-Tac-Toe.\n\nYour job is to recreate the game of Tic-Tac-Toe, allowing two players to compete against each other. The\nfollowing features are required:\n\n\t\tTwo human players take turns entering their choice using the same keyboard.\n\t\tThe players designate which square they want to play in. HINT: You might consider using the number\n\t\tpad as a guide. For example, if they enter 7, they have chosen the top left corner of the board.\n\t\tThe game should prevent players from choosing squares that are already occupied. If such a move\n\t\tis attempted, the player should be told of the problem and given another chance.\n\t\tThe game must detect when a player wins or when the board is full with no winner (draw/\"cat\").\n\t\tWhen the game is over, the outcome is displayed to the players.\n\t\tThe state of the board must be displayed to the player after each play.\n\nObjectives:\n\n-\tBuild the game of Tic-Tac-Toe as described in the requirements above. Starting the CRC cards is\n\trecommended, but the goal is to make working software, not CRC cards.\n-\tAnswer this question: How might you modify your completed program if running multiple rounds\n\twas a requirement (for example, a best-out-of-five series)?\n\n");
 
 Board board = new();
-Console.WriteLine(board._playingField);
 Console.WriteLine(board.SetBoard());
-Console.WriteLine(board._playingField);
-
-Player playerOne = new('&');
-Player playerTwo = new('$');
-Console.WriteLine(playerOne._playerSymbol);
-Console.WriteLine(playerTwo._playerSymbol);
-
-Console.WriteLine(playerOne.MoveSelect(board));
-
-
+Player playerOne = new("Matthew");
+Player playerTwo = new("Angelo");
+TicTacToeReferee referee = new();
+referee.RunGame(board, playerOne, playerTwo);
 
 //-----------------------------------------------------Tic-Tac-Toe (start)
+
 public class Board
 {
-    public string _playingField = $" 1 | 2 | 3 \n---+---+---\n 4 | 5 | 6 \n---+---+---\n 7 | 8 | 9 \n";
+    public static int _playableSpace = 1;
+    public string FieldOfPlay { get; set; } = $" {_playableSpace++} | {_playableSpace++} | {_playableSpace++} \n---+---+---\n {_playableSpace++} | {_playableSpace++} | {_playableSpace++} \n---+---+---\n {_playableSpace++} | {_playableSpace++} | {_playableSpace++} ";
     public Board()
-    {
-    }
-
+    {}
     public string SetBoard()
     {
-        string newBoard = "";
-
-        foreach(char unit in _playingField)
-        {
-            if (char.IsDigit(unit))
-                newBoard += " ";
-            if (!char.IsDigit(unit))
-                newBoard += unit;
-        }
-        return newBoard;
+        return FieldOfPlay;
     }
 }
+
 public class Player
 {
-    public char _playerSymbol;
-
-    public Player(char symbol)
+    private char _playerSymbol;
+    private string _playerName;
+    private bool isValidSymbol = false;
+    public Player(string playerName)
     {
-        _playerSymbol = symbol;
-    }
-
-    public string MoveSelect(Board board)
-    {
-        Console.WriteLine("Top row is:\t1, 2, 3\nCenter row is:\t4, 5, 6\nBottom row is:\t7, 8, 9\n\nWhich position would you like to choose?");
-        string? playerChoice = Console.ReadLine();
-
-        string boardAfterPlay = "";
-
-        foreach(char field in board._playingField)
+        _playerName = playerName;
+        char playerSymbol = Convert.ToChar(Console.ReadLine());
+        while(char.IsDigit(playerSymbol))
         {
-            if(!char.Equals(playerChoice, field))
-            boardAfterPlay += field;
-            if(char.Equals(playerChoice, field))
-            boardAfterPlay += $"{playerChoice}";
+                Console.WriteLine("Please select a character that isn't a number.");
+                playerSymbol = Convert.ToChar(Console.ReadLine());
         }
-
-        return boardAfterPlay;
+        _playerSymbol = playerSymbol;
+        isValidSymbol = true;
+        GetPlayerSymbol();
     }
+    public string ChoosePlayableField(Board board)
+    {
+        Console.WriteLine($"It's {_playerName}'s turn.");
+
+        string optionsToPickFrom = board.SetBoard();
+        Console.WriteLine(optionsToPickFrom);
+        Console.WriteLine("Select where you'd like to place your symbol.");
+        char? playersChoice = Convert.ToChar(Console.ReadLine());
+        string returnString = "";
+
+        foreach(char unit in optionsToPickFrom)
+        {
+            if(Convert.ToChar(unit) == Convert.ToChar(playersChoice))
+            {
+                Console.WriteLine($"You selected {unit}");
+                returnString += _playerSymbol;
+            }
+            else
+                returnString += unit;
+        }
+        board.FieldOfPlay = returnString;
+        return $"\n{board.FieldOfPlay}\n";
+    }
+    public char GetPlayerSymbol() => _playerSymbol;
+    public string GetPlayerName() => _playerName;
 }
 
+public class TicTacToeReferee
+{
+    public TicTacToeReferee()
+    {}
+    public void CheckPlay(Board board, Player player)
+    {
+        char symbolToConnect = player.GetPlayerSymbol();
+        Console.WriteLine($"Current field of play:\n{board.FieldOfPlay}\n");
+        Console.WriteLine($"Checking connections for {player.GetPlayerName()}'s {player.GetPlayerSymbol()}..");
+        foreach(char unit in board.FieldOfPlay)
+        {
+            // checking for connection of 3 fields of play
+            // ...
+            // ...
+        }
+    }
+
+    public void RunGame(Board board, Player playerOne, Player playerTwo)
+    {
+        playerOne.ChoosePlayableField(board);
+        CheckPlay(board, playerOne);
+        playerTwo.ChoosePlayableField(board);
+        CheckPlay(board, playerTwo);
+        playerOne.ChoosePlayableField(board);
+        CheckPlay(board, playerOne);
+        playerTwo.ChoosePlayableField(board);
+        CheckPlay(board, playerTwo);
+        playerOne.ChoosePlayableField(board);
+        CheckPlay(board, playerOne);
+        playerTwo.ChoosePlayableField(board);
+        CheckPlay(board, playerTwo);
+        playerOne.ChoosePlayableField(board);
+        CheckPlay(board, playerOne);
+        playerTwo.ChoosePlayableField(board);
+        CheckPlay(board, playerTwo);
+
+    }
+}
 //-----------------------------------------------------Tic-Tac-Toe (end)
 //-----------------------------------------------------The Password Validator (start)
 public class PasswordValidator
