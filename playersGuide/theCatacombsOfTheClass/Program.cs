@@ -63,41 +63,41 @@ Card[] BuildDeck()
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 Console.WriteLine("\n\t\t\t\tBoss Battle: The Locked Door\n\nThe fourth pedestal demands constructing a door class with a locking mechanism that requires a unique\nnumeric code to unlock. You have done something similar before with using a class, but the locking\nmechanism is new. The door should only unlock if the pass code is the right one.\n\n\t\tThe following statements describe how the door works:\n\n\t\tAn open door can always be closed.\n\t\tA closed (but not locked) door can always be opened.\n\t\tA closed door can always be locked.\n\t\tA locked door can be unlocked, but a numeric pass code is needed, and the door will only unlock if\n\t\tthe code supplied matches the door's current pass code.\n\t\tWhen a door is created, it must be given an initial pass code.\n\t\tAdditionally, you should be able to change the pass code by supplying the current code and a new\n\t\tone. The pass code should only change if the correct, current code is given.\n\nObjectives:\n\n-\tDefine a Door class that can keep track of whether it is locked, open, or closed.\n-\tMake it so you can perform the four transitions defined above the methods.\n-\tBuild a constructor that requires the starting numeric pass code.\n-\tBuild a method that will allow you to change the pass code for an existing door by supplying the\n\tcurrent pass code and new pass code. Only change the pass code if the current pass code is correct.\n-\tMake your main method ask the user for a starting pass code, then create a new Door instance. Allow\n\tthe user to attempt the four transitions described above (open, close, lock, unlock) and change the\n\tcode by typing in text commands.\n\n");
 
-// Door firstDoor = new(5, 9, 20, 100);
-// Console.WriteLine(firstDoor.IsClosed);
-// Console.WriteLine(firstDoor.IsLocked);
-// Console.WriteLine(firstDoor.IsUnlocked);
-// Console.WriteLine(firstDoor.IsOpen);
-// Door.CheckDoor(firstDoor);
-// Door.UnlockDoor(firstDoor);
-// Door.OpenDoor(firstDoor);
-// Console.WriteLine(firstDoor.IsClosed);
-// Console.WriteLine(firstDoor.IsLocked);
-// Console.WriteLine(firstDoor.IsUnlocked);
-// Console.WriteLine(firstDoor.IsOpen);
-// Door.CheckDoor(firstDoor);
-// Door.CloseDoor(firstDoor);
-// firstDoor.LockDoor();
-// firstDoor.ChangePassCode();
-// firstDoor.ChangePassCode();
-// Console.WriteLine(firstDoor.IsClosed);
-// Console.WriteLine(firstDoor.IsLocked);
-// Console.WriteLine(firstDoor.IsUnlocked);
-// Console.WriteLine(firstDoor.IsOpen);
+Door firstDoor = new(5, 9, 20, 100);
+Console.WriteLine(firstDoor.IsClosed);
+Console.WriteLine(firstDoor.IsLocked);
+Console.WriteLine(firstDoor.IsUnlocked);
+Console.WriteLine(firstDoor.IsOpen);
+Door.CheckDoor(firstDoor);
+Door.UnlockDoor(firstDoor);
+Door.OpenDoor(firstDoor);
+Console.WriteLine(firstDoor.IsClosed);
+Console.WriteLine(firstDoor.IsLocked);
+Console.WriteLine(firstDoor.IsUnlocked);
+Console.WriteLine(firstDoor.IsOpen);
+Door.CheckDoor(firstDoor);
+Door.CloseDoor(firstDoor);
+firstDoor.LockDoor();
+firstDoor.ChangePassCode();
+firstDoor.ChangePassCode();
+Console.WriteLine(firstDoor.IsClosed);
+Console.WriteLine(firstDoor.IsLocked);
+Console.WriteLine(firstDoor.IsUnlocked);
+Console.WriteLine(firstDoor.IsOpen);
 
-// Console.WriteLine("You'd like to create a door? Please enter a four digit a pass code for your new door. Bare in mind that each number must be between 0 and 255");
-// int? userOne = Convert.ToInt16(Console.ReadLine());
-// int? userTwo = Convert.ToInt16(Console.ReadLine());
-// int? userThree = Convert.ToInt16(Console.ReadLine());
-// int? userFour = Convert.ToInt16(Console.ReadLine());
-// Door userDoor = new Door((byte)userOne, (byte)userTwo, (byte)userThree, (byte)userFour);
-// Door.CheckDoor(userDoor);
-// userDoor.ChangePassCode();
+Console.WriteLine("You'd like to create a door? Please enter a four digit a pass code for your new door. Bare in mind that each number must be between 0 and 255");
+int? userOne = Convert.ToInt16(Console.ReadLine());
+int? userTwo = Convert.ToInt16(Console.ReadLine());
+int? userThree = Convert.ToInt16(Console.ReadLine());
+int? userFour = Convert.ToInt16(Console.ReadLine());
+Door userDoor = new Door((byte)userOne, (byte)userTwo, (byte)userThree, (byte)userFour);
+Door.CheckDoor(userDoor);
+userDoor.ChangePassCode();
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 Console.WriteLine("\n\t\t\t\tBoss Battle: The Password Validator\n\nThe fifth and final pedestal describes a class that represents a concept more abstract than the first four:\na password validator. You must create a class that can determine if a password is valid (meets the rules\ndefined for a legitimate password). The pedestal initially doesn't describe any rules, but as you brush the\ndust off the pedestal, it vibrates for a moment, and the following rules appear:\n\n\t\tPasswords must be at least 6 letters long and no more than 13 letters long.\n\t\tPasswords must contain at least one uppercase letter, one lowercase letter, and one number.\n\t\tPasswords cannot contain a capital T or an ampersand(&) because Ingelmar in IT has decreed it.\n\nThe last rule seems random, and you wonder if the pedestal is just tormenting you with obscure rules.\n\nYou ponder for a moment about how to decide if a character is uppercase, lowercase, or a number, but\nwhile scratching your head, you notice a piece of folded parchment on the ground near your feet. You\npick it up, unfold it, and read it:\n\"foreach with a string lets you get its characters!\n> foreach (char letter in word) { ... }\n\nchar has static methods to categorize letters!\n> char.IsUpper('A'), char.IsLower('a'), char.IsDigit('0')\n\nThat might be useful information! You are grateful to whoever left it behind. It is signed simply \"A.\"\n\nObjectives:\n\n-\tDefine a new PasswordValidator class that can be given a password and determine if the\npassword follows the rules above.\n-\tMake your main method loop forever, asking for a password and reporting whether the password is allowed using an instance of the PasswordValidator class.\n\n");
 
-// string? passwordTest = Console.ReadLine();
-// PasswordValidator.CheckPassword(passwordTest);
+string? passwordTest = Console.ReadLine();
+PasswordValidator.CheckPassword(passwordTest);
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 Console.WriteLine("\n\t\t\t\tBoss Battle: Tic-Tac-Toe\n\nCompleting designs for the three games in the Chamber of Design causes the pedestals to light up red\nagain, and another door opens, letting you into the final chamber. This chamber has only a single large,\nbroad pedestal. Inscribed on the stone floor in a circle around the pedestal are the engraved words, \"Only\na True Programmer can build object-oriented programs.\"\n\nMore text engraved on the pedestal describes what you recognize as the game of Tic-Tac-Toe, stating\nthat in ancient times, inhabitants of the land would use this as a Battle of Wits to determine the outcome\nof political strife. Instead of fighting wars, they would battle it out n a game of Tic-Tac-Toe.\n\nYour job is to recreate the game of Tic-Tac-Toe, allowing two players to compete against each other. The\nfollowing features are required:\n\n\t\tTwo human players take turns entering their choice using the same keyboard.\n\t\tThe players designate which square they want to play in. HINT: You might consider using the number\n\t\tpad as a guide. For example, if they enter 7, they have chosen the top left corner of the board.\n\t\tThe game should prevent players from choosing squares that are already occupied. If such a move\n\t\tis attempted, the player should be told of the problem and given another chance.\n\t\tThe game must detect when a player wins or when the board is full with no winner (draw/\"cat\").\n\t\tWhen the game is over, the outcome is displayed to the players.\n\t\tThe state of the board must be displayed to the player after each play.\n\nObjectives:\n\n-\tBuild the game of Tic-Tac-Toe as described in the requirements above. Starting the CRC cards is\n\trecommended, but the goal is to make working software, not CRC cards.\n-\tAnswer this question: How might you modify your completed program if running multiple rounds\n\twas a requirement (for example, a best-out-of-five series)?\n\n");
 
@@ -171,37 +171,89 @@ public class TicTacToeReferee
 {
     public TicTacToeReferee()
     {}
-    public void CheckPlay(Board board, Player player)
+    public void CheckPlay(Board board, Player playerOne, Player playerTwo)
     {
-        char symbolToConnect = player.GetPlayerSymbol();
+        bool playerWins = false;
+        char symbolToConnect = playerOne.GetPlayerSymbol();
         Console.WriteLine($"Current field of play:\n{board.FieldOfPlay}\n");
-        Console.WriteLine($"Checking connections for {player.GetPlayerName()}'s {player.GetPlayerSymbol()}..");
-        foreach(char unit in board.FieldOfPlay)
+        Console.WriteLine($"Checking connections for {playerOne.GetPlayerName()}'s {playerOne.GetPlayerSymbol()}..");
+        
+        char[] playerSymbols = new char[9];
+        int playerSymbolsIndexes = 0;
+        Console.WriteLine(board.FieldOfPlay.Length);
+        for ( int i = 0; i < board.FieldOfPlay.Length; i++ )
         {
-            // checking for connection of 3 fields of play
-            // ...
-            // ...
+            if (board.FieldOfPlay[i] == playerOne.GetPlayerSymbol() || board.FieldOfPlay[i] == playerTwo.GetPlayerSymbol())
+            {
+                Console.WriteLine(board.FieldOfPlay[i]);
+                playerSymbols[playerSymbolsIndexes] = board.FieldOfPlay[i];
+                playerSymbolsIndexes++;
+            }
         }
+
+        
+        if (playerSymbols[0] == playerOne.GetPlayerSymbol() && playerSymbols[1] == playerOne.GetPlayerSymbol() && playerSymbols[2] == playerOne.GetPlayerSymbol())
+        {
+            Console.WriteLine($"{playerOne.GetPlayerName()} wins!");
+            playerWins = true;
+        }
+        if (playerSymbols[3] == playerOne.GetPlayerSymbol() && playerSymbols[4] == playerOne.GetPlayerSymbol() && playerSymbols[5] == playerOne.GetPlayerSymbol())
+        {
+            Console.WriteLine($"{playerOne.GetPlayerName()} wins!");
+            playerWins = true;
+        }
+        if (playerSymbols[6] == playerOne.GetPlayerSymbol() && playerSymbols[7] == playerOne.GetPlayerSymbol() && playerSymbols[8] == playerOne.GetPlayerSymbol())
+        {
+            Console.WriteLine($"{playerOne.GetPlayerName()} wins!");
+            playerWins = true;
+        }
+        if (playerSymbols[0] == playerOne.GetPlayerSymbol() && playerSymbols[3] == playerOne.GetPlayerSymbol() && playerSymbols[6] == playerOne.GetPlayerSymbol())
+        {
+            Console.WriteLine($"{playerOne.GetPlayerName()} wins!");
+            playerWins = true;
+        }
+        if (playerSymbols[1] == playerOne.GetPlayerSymbol() && playerSymbols[4] == playerOne.GetPlayerSymbol() && playerSymbols[7] == playerOne.GetPlayerSymbol())
+        {
+            Console.WriteLine($"{playerOne.GetPlayerName()} wins!");
+            playerWins = true;
+        }
+        if (playerSymbols[2] == playerOne.GetPlayerSymbol() && playerSymbols[5] == playerOne.GetPlayerSymbol() && playerSymbols[8] == playerOne.GetPlayerSymbol())
+        {
+            Console.WriteLine($"{playerOne.GetPlayerName()} wins!");
+            playerWins = true;
+        }
+        if (playerSymbols[0] == playerOne.GetPlayerSymbol() && playerSymbols[4] == playerOne.GetPlayerSymbol() && playerSymbols[8] == playerOne.GetPlayerSymbol())
+        {
+            Console.WriteLine($"{playerOne.GetPlayerName()} wins!");
+            playerWins = true;
+        }
+        if (playerSymbols[2] == playerOne.GetPlayerSymbol() && playerSymbols[4] == playerOne.GetPlayerSymbol() && playerSymbols[6] == playerOne.GetPlayerSymbol())
+        {
+            Console.WriteLine($"{playerOne.GetPlayerName()} wins!");
+            playerWins = true;
+        }
+
+        if (playerWins) Console.WriteLine("Congratulations!");
     }
 
     public void RunGame(Board board, Player playerOne, Player playerTwo)
     {
         playerOne.ChoosePlayableField(board);
-        CheckPlay(board, playerOne);
+        CheckPlay(board, playerOne, playerTwo);
         playerTwo.ChoosePlayableField(board);
-        CheckPlay(board, playerTwo);
+        CheckPlay(board, playerTwo, playerOne);
         playerOne.ChoosePlayableField(board);
-        CheckPlay(board, playerOne);
+        CheckPlay(board, playerOne, playerTwo);
         playerTwo.ChoosePlayableField(board);
-        CheckPlay(board, playerTwo);
+        CheckPlay(board, playerTwo, playerOne);
         playerOne.ChoosePlayableField(board);
-        CheckPlay(board, playerOne);
+        CheckPlay(board, playerOne, playerTwo);
         playerTwo.ChoosePlayableField(board);
-        CheckPlay(board, playerTwo);
+        CheckPlay(board, playerTwo, playerOne);
         playerOne.ChoosePlayableField(board);
-        CheckPlay(board, playerOne);
+        CheckPlay(board, playerOne, playerTwo);
         playerTwo.ChoosePlayableField(board);
-        CheckPlay(board, playerTwo);
+        CheckPlay(board, playerTwo, playerOne);
 
     }
 }
