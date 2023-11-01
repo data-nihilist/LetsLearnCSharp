@@ -26,6 +26,10 @@ Console.WriteLine(b._name);      // "Unknown" by our constructor --- There's now
 b._name = "C-3PO";
 b._points = 8543;
 b._level = 8;
+Score test2 = new();
+Console.WriteLine(test2._name);
+Console.WriteLine(test2._level);
+Console.WriteLine(test2._points);
 
 if (a.EarnedStar())
     Console.WriteLine($"{a._name} earned a star!");
@@ -114,7 +118,7 @@ enum Fletching { Plastic, TurkeyFeathers, GooseFeathers };
 
 //------------------------------------------------------------------------------------------Vin Fletcher's Arrows(end)
 
-// Defining a new class:        (see class definitions at the bottom of the main method (program.cs OR its own file))
+// Defining a new class:        (general note: see class definitions at the bottom of the main method (program.cs OR its own file))
 // It's common convention in C# to place an underscore before field names. ** Basically, one "places a little field before a field's name to show/see that it is a field."
 class Score 
 {
@@ -139,12 +143,14 @@ class Score
 
     Classes can have as many constructors as they need. With multiple constructors, the outside world gets to pick which constructor it wants to use.
 
-    Above, the 'this' keyword is used to accomplish 'name hiding,' and we've also implemented the standard convention for naming fields using the the underscore character appended in front of each field's name: _
+    Above, the 'this' keyword is used to accomplish 'name hiding,' and we've also implemented the standard convention for naming fields using the
+    underscore character appended in front of each field's name: _
 */
-    public Score() : this("Unknown", 0, 0)  // Sometimes we'd like to re-use the code in one constructor from another. But we can't just call a constructor without using 'new'.
-    {                                       //If we did that, we'd be creating a second object while creating the first, which isn't what we want. If we want one constructor to build off another one, use the 'this' keyword.
-    }
-
+    public Score() : this("Unknown", 100, 1)  // Sometimes we'd like to re-use the code in one constructor from another. But we can't just call a 
+    {                                        //constructor without using 'new'.
+        /*..*/                              //If we did that, we'd be creating a second object while creating the first, which isn't what we want.
+    }                                        //If we want one constructor to build off another one, use the 'this' keyword.
+// 11/1/23  The above is accomplished using the same operator, : , as when we leverage inheritance while defining class's, their constructors, methods, etc.
     public Score(string n, int p, int l)
     {
         _name = n;

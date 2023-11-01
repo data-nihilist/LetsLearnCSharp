@@ -159,7 +159,9 @@ public class Derived : Base
 }
 */
 
-//-----------------------------------------------Challenge (start)
+//-----------------------------------------------Challenge: Labeling Inventory
+using System.Security.Cryptography.X509Certificates;
+
 Console.WriteLine("\t\t\t\tChallenge: Labeling Inventory\n");
 Console.WriteLine("You realize that your inventory items are not easy to sort through. If you could make it easy to label all\nof your inventory items, it would be easier to know what items you have in your pack.\n\nModify your inventory program (inheritance chapter) as described below.\n\n");
 Console.WriteLine("Objectives:\n\n-\tOverride the existing ToString method (from the object base class) on all of your inventory item\n\tsubclasses to give them a name. For example, new Rope().ToString() should return \"Rope\".\n-\tOverride ToString() on the Pack class to display the contents of the pack. If a pack contains water,\n\trope, and two arrows, then calling ToString on the Pack object could look like \"Pack\n\tcontaining Water Rope Arrow Arrow\".\n-\tBefore the user chooses the next item to add, display the pack's current contents via its new\n\tToString method.\n\n");
@@ -175,7 +177,148 @@ pack.AddItem(food);
 pack.AddItem(sword);
 pack.AddItem(rope);
 pack.AddItem(rope);
+//-----------------------------------------------Challenge: The Old Robot
+Console.WriteLine("\n\n\t\t\t\tChallenge: The Old Robot\n");
+Console.WriteLine("You spot something shiny, half-buried in the mud. You pull it out and realize that it seems to be some\nmechanical automaton with the \"Property of Dynamak\" etched into it. As you knock of the caked-\non mud, you realize that it seems like this old automaton might even be programmable if you can give it\nthe proper commands. The automaton seems to be structured like this:\n");
+Console.WriteLine("\t\t\tpublic class Robot\n\t\t\t{\n\t\t\t\tpublic int X { get; set; }\n\t\t\t\tpublic int Y { get; set; }\n\t\t\t\tpublic bool IsPowered { get; set; }\n\t\t\t\tpublic RobotCommand?[] Commands { get; } = new RobotCommand?[3];\n\t\t\t\tpublic void Run()\n\t\t\t\t{\n\t\t\t\t\tforeach (RobotCommand? command in Commands)\n\t\t\t\t\t{\n\t\t\t\t\t\tcommand?.Run(this);\n\t\t\t\t\t\tConsole.WriteLine($\"[{X} {Y} {IsPowered}]\");\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}");
+Console.WriteLine("\n\nYou don't see a definition of that RobotCommand class. Still, you think you might be able to recreate it\n(a class with only an abstract Run command) and then make derived classes that extend RobotCommand\nthat move it in each of the four directions and power it on and off.(You wish you could manufacture a\nwhole army of these!)\n\n");
+Console.WriteLine("Objectives:\n\n-\tCopy the code above into a new project.\n-\tCreate a RobotCommand class with a public and abstract void Run(Robot robot) method. (The\n\tcode above should compile after this step.)\n-\tMake OnCommand and OffCommand classes that inherit from RobotCommand and turn the robot\n\ton or off by overriding the Run method.\n-\tMake a NorthCommand, SouthCommand, WestCommand, and EastCommand that move the robot 1\n\tunit in the +Y direction, 1 unit in the -Y direction, 1 unit in the -X direction, and 1 unit in the +X\n\tdirection, respectively. Also, ensure that these commands only work if the robot's IsPowered\n\tproperty is true.\n-\tMake your main method able to collect three commands from the console window. Generate new\n\tRobotCommand objects based on the text entered. After filling the robot's command set with these\n\tnew RobotCommand objects, use the robot's Run method to execute them. For example:\n\n\ton\n\tnorth\n\twest\n\n\t[0 0 True]\n\t[0 1 True]\n\t[-1 1 True]\n\n\t\t\tNote: You might find this strategy for making commands that update other objects useful in some\n\t\t\tof the larger challenges in the coming levels.\n\n");
 
+Robot robot = new();
+
+Console.WriteLine("Type your command.\n\t\toptions:\t[ on ]\t[ off ]");
+
+string? firstCommand = Console.ReadLine();
+if (firstCommand == "on")
+{
+    robot.Commands[0] = new OnCommand();
+
+    Console.WriteLine("I can move North, South, East, and West. I can also be turned off by typing 'off'.");
+    string? nowWhat = Console.ReadLine();
+    
+}
+else
+{
+    robot.Commands[1] = new NorthCommand();
+    robot.Commands[2] = new NorthCommand();
+}
+robot.Run();
+
+
+//-----------------------------------------------The Old Robot (start)
+public class Robot
+{
+    public int X { get; set; }
+    public int Y { get; set; }
+    public bool IsPowered { get; set; }
+    public RobotCommand?[] Commands { get; } = new RobotCommand?[3];
+    public void Run()
+    {
+        foreach (RobotCommand? command in Commands)
+        {
+            command?.Run(this);
+            Console.WriteLine($"[{X} {Y} {IsPowered}]");
+        }
+    }
+}
+
+public abstract class RobotCommand      // line 121
+{
+    public abstract void Run(Robot robot);
+}
+
+public class OnCommand : RobotCommand
+{
+    public override void Run(Robot robot)
+    {
+        if (robot.IsPowered == false)
+        {
+            robot.IsPowered = true;
+        }
+        else 
+        {
+            Console.WriteLine("I'm on!");
+        }
+    }
+}
+
+public class OffCommand : RobotCommand
+{
+    public override void Run(Robot robot)
+    {
+        if (robot.IsPowered == true)
+        {
+            robot.IsPowered = false;
+        }
+        else 
+        {
+            Console.WriteLine("//silence//");
+        }
+    }
+}
+
+public class NorthCommand : RobotCommand
+{
+    public override void Run(Robot robot)
+    {
+        if (robot.IsPowered == true)
+        {
+            robot.Y++;
+        }
+        else
+        {
+            Console.WriteLine("* beep. *");
+        }
+    }
+}
+
+public class SouthCommand : RobotCommand
+{
+    public override void Run(Robot robot)
+    {
+        if (robot.IsPowered == true)
+        {
+            robot.Y--;
+        }
+        else
+        {
+            Console.WriteLine("*beep.");
+        }
+    }
+}
+
+public class WestCommand : RobotCommand
+{
+    public override void Run(Robot robot)
+    {
+        if (robot.IsPowered == true)
+        {
+            robot.X--;
+        }
+        else
+        {
+            Console.WriteLine("*beebeep*");
+        }
+    }
+}
+
+public class EastCommand : RobotCommand
+{
+    public override void Run(Robot robot)
+    {
+        if (robot.IsPowered == true)
+        {
+            robot.X++;
+        }
+        else
+        {
+            Console.WriteLine("*beeep*");
+        }
+    }
+}
+//-----------------------------------------------The Old Robot (end)
+
+//-----------------------------------------------Labeling Inventory (start)
 public class Pack
 {
     private static int TotalNumberOfItems { get; set; }
@@ -310,3 +453,4 @@ public class Sword : InventoryItem
         _itemVolume = 3f;
     }
 }
+//-----------------------------------------------Labeling Inventory (end)
