@@ -160,8 +160,6 @@ public class Derived : Base
 */
 
 //-----------------------------------------------Challenge: Labeling Inventory
-using System.Security.Cryptography.X509Certificates;
-
 Console.WriteLine("\t\t\t\tChallenge: Labeling Inventory\n");
 Console.WriteLine("You realize that your inventory items are not easy to sort through. If you could make it easy to label all\nof your inventory items, it would be easier to know what items you have in your pack.\n\nModify your inventory program (inheritance chapter) as described below.\n\n");
 Console.WriteLine("Objectives:\n\n-\tOverride the existing ToString method (from the object base class) on all of your inventory item\n\tsubclasses to give them a name. For example, new Rope().ToString() should return \"Rope\".\n-\tOverride ToString() on the Pack class to display the contents of the pack. If a pack contains water,\n\trope, and two arrows, then calling ToString on the Pack object could look like \"Pack\n\tcontaining Water Rope Arrow Arrow\".\n-\tBefore the user chooses the next item to add, display the pack's current contents via its new\n\tToString method.\n\n");
