@@ -33,7 +33,7 @@ void DisplayIntro()
     Console.WriteLine("caverns but be warned: you have a limited supply.");
 }
 
-// for small game (4x4)
+//-------------------------------------------------------------------Small game (4x4)
 FountainOfObjectsGame CreateSmallGame()
 {
     Map map = new Map(4, 4);
@@ -51,7 +51,7 @@ FountainOfObjectsGame CreateSmallGame()
     return new FountainOfObjectsGame(map, new Player(start), monsters);
 }
 
-// for medium game (6x6)
+//-------------------------------------------------------------------Medium game (6x6)
 FountainOfObjectsGame CreateMediumGame()
 {
     Map map = new Map(6, 6);
@@ -71,7 +71,7 @@ FountainOfObjectsGame CreateMediumGame()
     return new FountainOfObjectsGame(map, new Player(start), monsters);
 }
 
-// for large game (8x8)
+//-------------------------------------------------------------------Large game (8x8)
 FountainOfObjectsGame CreateLargeGame()
 {
     Map map = new Map(8, 8);
@@ -261,7 +261,7 @@ public class Player
         CauseOfDeath = cause;
     }
 }
-
+//-------------------------------------------------------------------Monster abstract
 public abstract class Monster
 {
     public Location Location { get; set; }
@@ -270,6 +270,7 @@ public abstract class Monster
 
     public abstract void Activate(FountainOfObjectsGame game);
 }
+//-------------------------------------------------------------------Monsters
 
 public class Maelstrom : Monster
 {
@@ -312,11 +313,13 @@ public class Amarok : Monster
     public Amarok(Location start) : base(start) { }
     public override void Activate(FountainOfObjectsGame game) => game.Player.Kill("You have encountered an amarok and have died.");
 }
+//-------------------------------------------------------------------Player Command Interface
 
 public interface ICommand
 {
     void Execute(FountainOfObjectsGame game);
 }
+//-------------------------------------------------------------------Classes that implement the Player Command Interface
 
 public class HelpCommand : ICommand
 {
@@ -437,12 +440,14 @@ public class EnableFountainCommand : ICommand
         }
     }
 }
+//-------------------------------------------------------------------Player Sensory Interface
 
 public interface ISense
 {
     bool CanSense(FountainOfObjectsGame game);
     void DisplaySense(FountainOfObjectsGame game);
 }
+//-------------------------------------------------------------------Classes that implement the Player Sensory Interface
 
 public class LightInEntranceSense : ISense
 {
@@ -542,7 +547,7 @@ public class AmarokSense : ISense
         ConsoleHelper.WriteLine("You smell the stench of an amarok nearby..", ConsoleColor.DarkRed);
     }
 }
-
+//-------------------------------------------------------------------Console Helper Class
 public static class ConsoleHelper
 {
     public static void WriteLine(string text, ConsoleColor color)
@@ -557,6 +562,6 @@ public static class ConsoleHelper
         Console.Write(text);
     }
 }
-
+//-------------------------------------------------------------------enums (types of rooms, cardinal directions for movement)
 public enum RoomType { Normal, Entrance, Fountain, Pit, OffTheMap }
 public enum Direction { North, South, West, East }
