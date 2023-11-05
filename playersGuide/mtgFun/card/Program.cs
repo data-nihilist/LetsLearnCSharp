@@ -1,79 +1,39 @@
-﻿
-Card smeagolHelpfulGuide = new("Smeagol, Helpful Guide", CardRank.Legendary, CardType.Creature, ManaColor.Black );
-Console.WriteLine(smeagolHelpfulGuide.ViewCard());
-Console.WriteLine(smeagolHelpfulGuide.ToString()); // using base class (object)'s method, ToString(): outputs 'Card'
+﻿Console.WriteLine("\t\t\t\tMTG Commander Playground\n\n");
 
-Card swamp = new Land();
-Console.WriteLine(swamp.ViewCard());
-
-Card testLandCard = new Land();
-Console.WriteLine(testLandCard.ViewCard());
-
-if (testLandCard.GetType() == typeof(Land)) // true
+public interface ICardService
 {
-    Console.WriteLine("We've got a Card type");
-    if(testLandCard.GetType() == typeof(Land))
-        Console.WriteLine("and it's a land!");
-    else
-        Console.WriteLine("...");
+    void DisplayCard();
 }
-
-if (testLandCard.GetType() == typeof(Card)) // false
-Console.WriteLine("This is a card");
-
-if (testLandCard is Land) Console.WriteLine("testLandCard is a Land.");
-
-Land? randomCard = smeagolHelpfulGuide as Land;
-Console.WriteLine(randomCard?.ViewCard());
-
-public class Card
+public class Card : ICardService
 {
-    protected private string Name { get; init; } = "Unnamed";
-    protected private CardType Type { get; init; }
-    protected private CardRank Rank { get; init; }
-    protected private ManaColor Colors { get; init; } = ManaColor.Generic;
-    public Card()
-    {
+    private readonly string Name;
+    public Color[] ManaColors { get; set; }
+    public int TotalCost { get; set; }
 
-    }
-    public Card(string cardName, CardRank cardRank, CardType cardType, ManaColor manaColors)
+    public Card(string name, Color[] manaColors)
     {
-        Name = cardName;
-        Rank = cardRank;
-        Type = cardType;
-        Colors = manaColors;
+        Name = name;
+        ManaColors = manaColors;
     }
 
-
-    public string ViewCard()
+    public void DisplayCard()
     {
-        return $"{Name}\t\t{Colors}\n\n{Rank} {Type}";
+        Console.WriteLine($"_________________________________\n{Name}\t\t\n---------------------------------");
+    }
+
+}
+public enum Color { Generic, Black, White, Blue, Green, Red }
+public record ColorCost(Color Color, int Cost);
+public static class ConsoleHelper
+{
+    public static void WriteLine(string text, ConsoleColor color)
+    {
+        Console.ForegroundColor = color;
+        Console.WriteLine(text);
+    }
+    public static void Write(string text, ConsoleColor color)
+    {
+        Console.ForegroundColor = color;
+        Console.Write(text);
     }
 }
-
-public class Land : Card
-{
-    public Land(string cardName, CardType cardType, CardRank cardRank, ManaColor manaColors) : base(cardName, cardRank, cardType, manaColors)
-    {
-        Name = cardName;
-        Rank = cardRank;
-        Type = CardType.Land;
-        Colors = manaColors;
-    }
-    public Land()
-    {
-        Rank = CardRank.Basic;
-        Type = CardType.Land;
-    }
-}
-public enum CardType { Land, Creature, Sorcery, Instant, Artifact, Other };
-//--------------------------------------------------------------------
-public enum CardRank { Basic, Legendary, PlainsWalker, Other };
-//--------------------------------------------------------------------
-public enum CreatureTypeDecoration { Cleric, Wizard, Scout, Rogue, Ranger, Advisor, Horror, Other };
-public enum ManaColor { Generic, White, Black, Red, Green, Blue, Mixed };
-public enum KeyWord { Haste, Vigilance, Menace, Flying, Reach, Flash, Other };
-public enum CreatureType
-{
-    Unspecified, Human, Elf, Halfling, Avatar, Nazgul, Orc, Goblin, Troll, Artifact, Token, Other
-};
