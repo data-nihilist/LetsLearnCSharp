@@ -5,7 +5,8 @@ FountainOfObjectsGame game = Console.ReadLine() switch
 {
     "small" => CreateSmallGame(),
     "medium" => CreateMediumGame(),
-    "large" => CreateLargeGame()
+    "large" => CreateLargeGame(),
+    _ => CreateSmallGame()
 };
 
 DisplayIntro();
@@ -364,7 +365,8 @@ public class MoveCommand : ICommand
             Direction.North => new Location(currentLocation.Row - 1, currentLocation.Column),
             Direction.South => new Location(currentLocation.Row + 1, currentLocation.Column),
             Direction.East => new Location(currentLocation.Row, currentLocation.Column + 1),
-            Direction.West => new Location(currentLocation.Row, currentLocation.Column - 1)
+            Direction.West => new Location(currentLocation.Row, currentLocation.Column - 1),
+            _ => new Location(currentLocation.Row -1, currentLocation.Column)
         };
 
         if (game.Map.IsOnMap(newLocation))
@@ -400,7 +402,8 @@ public class ShootCommand : ICommand
             Direction.North => new Location(currentLocation.Row - 1, currentLocation.Column),
             Direction.South => new Location(currentLocation.Row + 1, currentLocation.Column),
             Direction.East => new Location(currentLocation.Row, currentLocation.Column + 1),
-            Direction.West => new Location(currentLocation.Row, currentLocation.Column - 1)
+            Direction.West => new Location(currentLocation.Row, currentLocation.Column - 1),
+            _ => new Location(currentLocation.Row - 1, currentLocation.Column)
         };
 
         bool foundSomething = false;
@@ -415,7 +418,7 @@ public class ShootCommand : ICommand
 
         if(foundSomething)
         {
-            ConsoleHelper.WriteLine("YOu fire an arrow and hit soemthing!", ConsoleColor.Green);
+            ConsoleHelper.WriteLine("YOu fire an arrow and hit something!", ConsoleColor.Green);
         }
         else
         {
