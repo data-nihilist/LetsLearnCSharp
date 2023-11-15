@@ -1,4 +1,9 @@
-﻿Console.WriteLine("\t\t\t\tMTG Commander Playground\n\n");
+﻿using System.Globalization;
+
+ConsoleHelper.WriteLine("\t\t\t\tMTG Commander Playground\n\n", ConsoleColor.Green);
+Card shelob = new Card("Shelob, Daughter of Ungoliant", new Color[5]);
+shelob.DisplayCard();
+
 
 public interface ICardService
 {
@@ -18,7 +23,7 @@ public class Card : ICardService
 
     public void DisplayCard()
     {
-        Console.WriteLine($"_________________________________\n{Name}\t\t\n---------------------------------");
+        ConsoleHelper.WriteLine($"_________________________________\n{Name}\t\t\n---------------------------------", ConsoleColor.DarkGreen);
     }
 
 }
